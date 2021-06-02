@@ -29,7 +29,7 @@
         position: relative;
         /*z-index: 10;*/
     }
-    .logo{
+    .logo {
         display: flex;
         width: 100px;
         left: 50px;

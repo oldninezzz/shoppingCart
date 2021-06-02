@@ -30,7 +30,6 @@ public class UserRegisterCheck extends HttpServlet {
             }
 
         } catch (Exception e) {
-            System.out.println("666");
             e.printStackTrace();
         }
 //        System.out.println("Success");

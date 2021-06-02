@@ -241,7 +241,6 @@
         let c = 0;
         var para, pnode, att, imgNode;
         <c:forEach var="item" items="${bookinfo}">
-            // console.log(c);
             para = document.createElement("div");
             para.innerHTML = "<p class=\"bookname\">${item.value.getBookname()}</p>" + "<img src=\"/shoppingCart/img/${item.value.getBookno()}.jpg\" width=\"100px\" height=\"120px\">"+
                 "<div class=\"description\"><h4>价格：¥${item.value.getPrice()}</h4><p>作者：${item.value.getAuthor()}编号：${item.key}<br>库存：${item.value.getStock()}</p></div>"+
@@ -251,7 +250,6 @@
             att.value = "test";
             para.setAttributeNode(att);
             bookitems.appendChild(para);
-            <%--pnode.innerHTML = "${item.value.getBookname()}";--%>
             c++;
         </c:forEach>
 
